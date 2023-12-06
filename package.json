@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portforlio - Damika",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Damika-Anupama/Portfolio.git"
+  },
+  "author": "Damika Anupama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Damika-Anupama/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Damika-Anupama/Portfolio#readme",
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}
