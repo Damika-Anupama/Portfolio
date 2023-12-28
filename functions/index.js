@@ -1,19 +1,32 @@
-const functions = require("firebase-functions");
-const admin = require("firebase-admin");
-const sgMail = require("@sendgrid/mail");
+const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+const nodemailer = require('nodemailer');
 
 admin.initializeApp();
-sgMail.setApiKey("YOUR_SENDGRID_API_KEY");
 
-exports.sendEmail = functions.https.onCall((data, context) => {
-  const { name, email, subject, message } = data;
-
-  const msg = {
-    to: "YOUR_DESTINATION_EMAIL", // Replace with your destination email address
-    from: "YOUR_SENDER_EMAIL", // Replace with your sender email address
-    subject: `New Contact Form Submission: ${subject}`,
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-  };
-
-  return sgMail.send(msg);
+// Configure nodemailer with your email provider (e.g., Gmail)
+const mailTransport = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'damikaanupama@gmail.com',
+    pass: 'PlayboyHOOKER345#',
+  },
 });
+
+exports.sendEmail = functions.firestore
+  .document('messages/{messageId}')
+  .onCreate((snap, context) => {
+    const data = snap.data();
+
+    const mailOptions = {
+      from: data.email,
+      to: 'damikaanupama@gmail.com',
+      subject: data.subject,
+      text: data.message,
+    };
+
+    return mailTransport.sendMail(mailOptions).then(() => {
+      console.log('Email sent successfully');
+      return null;
+    });
+  });

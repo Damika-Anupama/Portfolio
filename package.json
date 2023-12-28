@@ -18,6 +18,10 @@
   "homepage": "https://github.com/Damika-Anupama/Portfolio#readme",
   "devDependencies": {
     "eslint": "^8.55.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.33.2"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
   }
 }
