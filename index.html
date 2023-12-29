@@ -41,10 +41,10 @@
       <div id="menu" class="menu">
         <i class="fa fa-times" id="menu-close"></i>
         <div class="container">
-          <div class="image">
-            <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+          <div class="image" style="margin-top: 20px;">
+            <a href="#"><img src="assets/images/author-image.jpg" alt="Damika-Anupama" /></a>
           </div>
-          <div class="author-content">
+          <div class="author-content" style="margin: 20px 0px 30px;">
             <h4>Damika Anupama</h4>
             <span>Full-stack, deep-learning, web3.0 developer</span> <br>
             <span>💻❤️🍕😁🎸♟️📚</span>
@@ -57,13 +57,10 @@
               <li><a href="#section4">Contact Me</a></li>
             </ul>
           </nav>
-          <div class="social-network">
+          <div class="social-network" style="margin-top: 30px;">
             <ul class="soial-icons">
               <li>
                 <a href="https://github.com/Damika-Anupama"><i class="fa fa-github"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/Damika_Anupama"><i class="fa fa-twitter"></i></a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/damika-anupama-62a22a19a/"><i class="fa fa-linkedin"></i></a>
@@ -71,11 +68,20 @@
               <li>
                 <a href="https://stackoverflow.com/users/13336872/damika"><i class="fa fa-stack-overflow"></i></a>
               </li>
+               <li>
+                <a href="https://www.facebook.com/damika.anupama"><i class="fa fa-facebook"></i></a>
+              </li>
+               <li>
+                <a href="https://www.instagram.com/anupamadamika"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Damika_Anupama"><i class="fa fa-twitter"></i></a>
+              </li>
             </ul>
           </div>
-          <div class="copyright-text">
-            <p>Copyright 2023 - 2024</p>
-          </div>
+          <div class="copyright-text" style="margin-top: 10px;">
+            <p id="copyright-year">Copyright @ <span id="current-year"></span></p>
+          </div>          
         </div>
       </div>
     </div>
@@ -213,7 +219,8 @@
               <div class="left-text">
                 <h4>Articles</h4>
                 <p>
-                  Articles related to my projects related software engineering, deeplearning and web3.0, experiences, and other topics are published here. I'm also a writer at Medium.
+                  Articles related to my projects related software engineering, deeplearning and web3.0, experiences,
+                  and other topics are published here. I'm also a writer at Medium.
                 </p>
                 <div class="white-button">
                   <a href="./articles.html">Read More</a>
@@ -238,7 +245,8 @@
               <div class="right-text">
                 <h4>Hackathons</h4>
                 <p>
-                  All the hackathon details I participated in are listed here. I've participated in several hackathons and won several awards. I'm also a hackathon enthusiast ❤️💻
+                  All the hackathon details I participated in are listed here. I've participated in several hackathons
+                  and won several awards. I'm also a hackathon enthusiast ❤️💻
                 </p>
                 <div class="white-button">
                   <a href="./projects.html">Read More</a>
@@ -268,7 +276,7 @@
             </div>
           </div>
         </div>
-                
+
       </div>
     </section>
 
@@ -722,11 +730,9 @@
         <div class="section-heading">
           <h2>Contact Me</h2>
           <div class="line-dec"></div>
-          <span
-            >Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
+          <span>Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
             efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit.</span
-          >
+            sit amet, consectetur adipiscing elit.</span>
         </div>
         <div class="row">
           <div class="right-content">
@@ -735,50 +741,26 @@
                 <div class="row">
                   <div class="col-md-6">
                     <fieldset>
-                      <input
-                        name="name"
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Your name..."
-                        required=""
-                      />
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Your name..."
+                        required="" />
                     </fieldset>
                   </div>
                   <div class="col-md-6">
                     <fieldset>
-                      <input
-                        name="email"
-                        type="text"
-                        class="form-control"
-                        id="email"
-                        placeholder="Your email..."
-                        required=""
-                      />
+                      <input name="email" type="text" class="form-control" id="email" placeholder="Your email..."
+                        required="" />
                     </fieldset>
                   </div>
                   <div class="col-md-12">
                     <fieldset>
-                      <input
-                        name="subject"
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Subject..."
-                        required=""
-                      />
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
+                        required="" />
                     </fieldset>
                   </div>
                   <div class="col-md-12">
                     <fieldset>
-                      <textarea
-                        name="message"
-                        rows="6"
-                        class="form-control"
-                        id="message"
-                        placeholder="Your message..."
-                        required=""
-                      ></textarea>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
+                        required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-md-12">
@@ -853,6 +835,14 @@
       checkSection();
     });
   </script>
+  <script>
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+  
+    // Update the span with the current year
+    document.getElementById('current-year').innerText = currentYear;
+  </script>
+  
 </body>
 
 </html>
