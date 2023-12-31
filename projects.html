@@ -161,7 +161,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="inner text-center">
-            <p>&copy; 2023 Damika Anupama. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Damika Anupama. All rights reserved.</p>
           </div>
         </div>
       </div>
@@ -191,6 +191,10 @@
         });
       });
     });
+  </script>
+  <script>
+    var currentYear = new Date().getFullYear();
+    document.getElementById('current-year').innerText = currentYear;
   </script>
 </body>
 
