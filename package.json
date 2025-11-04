@@ -1,27 +1,20 @@
 {
-  "name": "portfolio",
+  "name": "damika-portfolio",
   "version": "1.0.0",
-  "description": "Portforlio - Damika",
-  "main": "index.js",
+  "description": "Damika Nanayakkara's Portfolio Website",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Damika-Anupama/Portfolio.git"
-  },
-  "author": "Damika Anupama",
+  "keywords": ["portfolio", "resume"],
+  "author": "Damika Nanayakkara",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Damika-Anupama/Portfolio/issues"
-  },
-  "homepage": "https://github.com/Damika-Anupama/Portfolio#readme",
   "devDependencies": {
-    "eslint": "^8.55.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.33.2"
-  },
-  "dependencies": {
-    "nodemailer": "^6.9.7"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "html-webpack-plugin": "^5.5.4",
+    "copy-webpack-plugin": "^11.0.0"
   }
 }

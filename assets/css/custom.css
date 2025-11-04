@@ -1,0 +1,194 @@
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Project card hover effects */
+.project-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Services item hover effects */
+.services-item {
+  transition: all 0.3s ease;
+}
+
+.services-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Testimonial item hover effects */
+.testimonial-item {
+  transition: all 0.3s ease;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Hobby item hover effects */
+.hobby-item {
+  transition: all 0.3s ease;
+}
+
+.hobby-item:hover {
+  transform: scale(1.05);
+}
+
+/* Content box hover effects */
+.content-box {
+  transition: all 0.3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Fix overlapping headings in Education/Experience sections - Keep original timeline design */
+.timeline .line-title {
+  line-height: 1.6 !important;
+  margin-bottom: 15px !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.timeline .content-text span {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.timeline .line-text {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Add spacing between timeline items when titles wrap to 2 lines */
+.timeline li {
+  margin-bottom: 20px;
+}
+
+/* Responsive fixes for medium to large screens */
+@media (min-width: 992px) and (max-width: 2560px) {
+  .timeline .line-title {
+    font-size: 16px;
+    line-height: 1.7 !important;
+    margin-bottom: 18px !important;
+  }
+}
+
+/* Fix for 4K and ultra-wide screens */
+@media (min-width: 2560px) {
+  .timeline .line-title {
+    font-size: 18px;
+    line-height: 1.8 !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Fix Services section h3 line-height */
+.services-item .services-content h3 {
+  line-height: 1.4 !important;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.services-item .services-content h3 a {
+  line-height: 1.4 !important;
+}
+
+/* Ensure equal height for service boxes */
+.services-item {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-item .services-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add padding to Achievement boxes */
+#achievements .content-box {
+  padding: 30px !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Add padding to Featured Project cards */
+.project-card {
+  padding: 30px !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.project-highlight {
+  padding: 50px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Make project cards clickable */
+.project-card {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-card:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Custom styles for contact form */
+#msgSubmit {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#msgSubmit.hidden {
+  display: none;
+}
+
+#msgSubmit.text-success {
+  color: #28a745;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+#msgSubmit.text-danger {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+#msgSubmit.text-info {
+  color: #17a2b8;
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+}
+
+.contact-block form .form-control {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-block form .btn {
+  margin-top: 10px;
+}
