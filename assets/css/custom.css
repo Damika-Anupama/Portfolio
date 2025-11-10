@@ -73,9 +73,13 @@ html {
   line-height: 1.6;
 }
 
-/* Add spacing between timeline items when titles wrap to 2 lines */
+/* Add spacing between timeline items using padding instead of margin to keep line connected */
 .timeline li {
-  margin-bottom: 20px;
+  padding-bottom: 35px !important;
+}
+
+.timeline li:last-child {
+  padding-bottom: 0 !important;
 }
 
 /* Responsive fixes for medium to large screens */
