@@ -96,17 +96,22 @@ html {
   }
 }
 
-/* Fix Services section h3 line-height */
+/* Fix Services section h3 line-height and alignment */
 .services-item .services-content h3 {
   line-height: 1.4 !important;
   min-height: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .services-item .services-content h3 a {
   line-height: 1.4 !important;
+  text-align: center;
+  width: 100%;
+  display: block;
 }
 
 /* Ensure equal height for service boxes */
