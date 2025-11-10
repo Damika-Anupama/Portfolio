@@ -675,7 +675,7 @@
                   <a class="stackoverflow" href="https://stackoverflow.com/users/13336872/damika" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
                 </li>
               </ul>
-              <p>Copyright © 2025 Damika Nanayakkara</p>
+              <p>Copyright © <span id="currentYear"></span> Damika Nanayakkara</p>
             </div>
           </div>
         </div>
@@ -702,6 +702,10 @@
     <script src="assets/js/jquery.slicknav.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact-form.js"></script>
+    <script>
+      // Set current year dynamically
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
   </body>
 </html>
