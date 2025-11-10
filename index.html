@@ -46,6 +46,10 @@
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
     <link rel="apple-touch-icon" href="assets/img/favicon.png">
 
+    <!-- Preload Critical Fonts for Better Performance -->
+    <link rel="preload" as="style" href="assets/fonts/font-awesome.min.css">
+    <link rel="preload" as="style" href="assets/fonts/simple-line-icons.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
     <!-- Fonts -->
@@ -66,6 +70,19 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <!-- Custom Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+    <!-- Google Analytics 4 -->
+    <!-- TODO: Replace G-XXXXXXXXXX with your actual Google Analytics Measurement ID -->
+    <!-- Get your ID from: https://analytics.google.com/ -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -125,6 +142,15 @@
   </head>
   <body>
 
+    <!-- Skip to main content for accessibility -->
+    <a href="#about" class="skip-to-main">Skip to main content</a>
+
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- Preloader End -->
+
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
@@ -138,7 +164,7 @@
               <span class="icon-menu"></span>
               <span class="icon-menu"></span>
             </button>
-            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="Damika Nanayakkara Logo"></a>
           </div>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
@@ -208,18 +234,18 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
               <div class="contents">
-                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
-                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Damika Anupama Nanayakkara</h2>
+                <p class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</p>
+                <h1 class="head-title wow fadeInUp" data-wow-delay="0.4s">Damika Anupama Nanayakkara</h1>
                 <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Full-Stack, AI & Web3 Engineer</p>
                 <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                   <li>
-                    <a class="github" href="https://github.com/Damika-Anupama" target="_blank"><i class="icon-social-github"></i></a>
+                    <a class="github" href="https://github.com/Damika-Anupama" target="_blank" aria-label="Visit my GitHub profile"><i class="icon-social-github"></i></a>
                   </li>
                   <li>
-                    <a class="linkedin" href="https://www.linkedin.com/in/damika-anupama-62a22a19a/" target="_blank"><i class="icon-social-linkedin"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/damika-anupama-62a22a19a/" target="_blank" aria-label="Visit my LinkedIn profile"><i class="icon-social-linkedin"></i></a>
                   </li>
                   <li>
-                    <a class="stackoverflow" href="https://stackoverflow.com/users/13336872/damika" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                    <a class="stackoverflow" href="https://stackoverflow.com/users/13336872/damika" target="_blank" aria-label="Visit my StackOverflow profile"><i class="fa-brands fa-stack-overflow"></i></a>
                   </li>
                 </ul>
                 <div class="header-button wow fadeInUp" data-wow-delay="1s">
@@ -241,7 +267,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/about-1.png" alt="">
+              <img class="img-fluid" src="assets/img/about/about-1.png" alt="Damika Anupama Nanayakkara - Full-Stack Developer and AI Engineer" loading="lazy" width="500" height="500">
             </div>
           </div> 
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -529,7 +555,7 @@
                   </div>
                   <div class="col-lg-5">
                     <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                      <img src="assets/img/gallery/flashguard_project.jpg" alt="FlashGuard Smart Glasses Project" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+                      <img src="assets/img/gallery/flashguard_project.jpg" alt="FlashGuard Smart Glasses Project" loading="lazy" width="800" height="600" style="width: 100%; height: auto; display: block; border-radius: 10px;">
                     </div>
                   </div>
                 </div>
@@ -760,13 +786,13 @@
             <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
               <ul class="social-icon">
                 <li>
-                  <a class="github" href="https://github.com/Damika-Anupama" target="_blank"><i class="icon-social-github"></i></a>
+                  <a class="github" href="https://github.com/Damika-Anupama" target="_blank" aria-label="Visit my GitHub profile"><i class="icon-social-github"></i></a>
                 </li>
                 <li>
-                  <a class="linkedin" href="https://www.linkedin.com/in/damika-anupama-62a22a19a/" target="_blank"><i class="icon-social-linkedin"></i></a>
+                  <a class="linkedin" href="https://www.linkedin.com/in/damika-anupama-62a22a19a/" target="_blank" aria-label="Visit my LinkedIn profile"><i class="icon-social-linkedin"></i></a>
                 </li>
                 <li>
-                  <a class="stackoverflow" href="https://stackoverflow.com/users/13336872/damika" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                  <a class="stackoverflow" href="https://stackoverflow.com/users/13336872/damika" target="_blank" aria-label="Visit my StackOverflow profile"><i class="fa-brands fa-stack-overflow"></i></a>
                 </li>
               </ul>
               <p>Copyright © <span id="currentYear"></span> Damika Nanayakkara</p>
@@ -786,16 +812,17 @@
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/contact-form.js"></script>
+    <!-- Defer non-critical scripts for better performance -->
+    <script src="assets/js/jquery.mixitup.js" defer></script>
+    <script src="assets/js/jquery.counterup.min.js" defer></script>
+    <script src="assets/js/waypoints.min.js" defer></script>
+    <script src="assets/js/wow.js" defer></script>
+    <script src="assets/js/jquery.nav.js" defer></script>
+    <script src="assets/js/jquery.easing.min.js" defer></script>
+    <script src="assets/js/nivo-lightbox.js" defer></script>
+    <script src="assets/js/jquery.slicknav.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/contact-form.js" defer></script>
     <script>
       // Set current year dynamically
       document.getElementById('currentYear').textContent = new Date().getFullYear();
